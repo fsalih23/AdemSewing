@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adem Sewing</title>
+<link rel = "shorcut icon" href = "Visual/GoldenScisscors.png">
+<link rel = "stylesheet" href = "Styles/gallery.css"> 
+<script>
+	var i = 0;
+	var images = [];
+	var time = 2000;
+
+	images[0] = "Visual/galleryImages/redDress.jpg";
+	images[1] = "Visual/galleryImages/whiteDress.jpg";
+	images[2] = "Visual/galleryImages/greenFlowerDress.jpg";
+	images[3] = "Visual/galleryImages/whiteSpottedDress.jpg";
+	images[4] = "Visual/galleryImages/blueEmbroidEdits/blueEmbroidEdited.png";
+	images[5] = "Visual/galleryImages/vestImageEdits/vestImageEdited.png";
+
+	function changeImg(){
+		document.slide.src = images[i];
+		if(i < images.length - 1){
+			i++;
+		}else{
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+	window.onload = changeImg;
+</script>
+</head>
+<div class = "banner" >Adem Sewing</div>
+<nav id = "main-nav">
+	<ul>
+		<li>
+			<a class = "current-page" href = "#">Gallery
+				<span class="arrow">&#x25BC;</span>
+			</a>
+				<ul class = "submenu">
+					<li>
+						<a href = "contact.html">Contact</a>
+					</li>
+					<li>
+						<a href = "about_us.html">About Us</a>
+					</li>
+					<li>
+						<a href = "contact.html">Services</a>
+					</li>
+					<li>
+						<a href = "order.html">Order</a>
+					</li>
+					<li>
+						<a href = "index.html">Home</a>
+					</li>
+				</ul>		
+		</li>	
+	</ul>
+</nav>
+<nav class = "slide-show">
+	<img name = "slide">
+</nav>
+<section class = "footer">
+	<div class  = "footer-item">Phone Number: 872-235-3143</div>
+	<div class  = "footer-item">Email Adress: sfayeze@gmail.com</div>
+	<div class  = "footer-item name">Adem Sewing</div>
+</section>
+<img class = "logo" src = "Visual/logo/GoldenScisscors.png" alt = "Scisscors Logo">
+<body>
+</body>
+</html>
