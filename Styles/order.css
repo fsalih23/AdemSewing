@@ -56,18 +56,18 @@ img{
 	position: fixed;
 }
 
-
 .arrow{
 	opacity: 0;
 }
 
-#ff-compose{
-	position: absolute;
-	left: 50%;
+iframe{
+	height: 600px;
+	width: 600px;
+	margin: 0;
+	position: fixed;
 	top: 50%;
-	transform: translate(-50%,-70%);
-	height: 500px;
-	width: 700px;
+	left: 55%;
+	transform: translate(-55%,-50%);
 }
 
 button{
